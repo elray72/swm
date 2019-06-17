@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
-import 'react-id-swiper/src/styles/scss/swiper.scss';
 import './_home.scss';
 
 import Hero from '../../organisms/Hero'
