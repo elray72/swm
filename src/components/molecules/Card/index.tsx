@@ -9,7 +9,7 @@ interface IProps {
 	title: string,
 }
 
-export const Card: React.SFC<IProps> = (props) => {
+export const Card: React.FC<IProps> = (props) => {
 	const componentClass = classNames(props.className, 'card');
 
 	return (
