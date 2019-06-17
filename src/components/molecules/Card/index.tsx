@@ -10,7 +10,7 @@ interface IProps {
 }
 
 export const Card: React.FC<IProps> = (props) => {
-	const componentClass = classNames(props.className, 'card');
+	const componentClass: string = classNames(props.className, 'card');
 
 	return (
 		<div className={componentClass}>

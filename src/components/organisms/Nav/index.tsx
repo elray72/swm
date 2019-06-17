@@ -9,7 +9,7 @@ interface IProps {
 }
 
 const Nav: React.FC<IProps> = (props) => {
-	const componentClass = classNames(props.className, 'nav');
+	const componentClass: string = classNames(props.className, 'nav');
 
 	return <nav className={componentClass}>
 		<ul className="nav__list">

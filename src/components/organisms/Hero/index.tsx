@@ -12,7 +12,7 @@ interface IProps {
 export class Home extends React.PureComponent<IProps> {
 
 	render() {
-		const componentClass = classNames(this.props.className, 'hero');
+		const componentClass: string = classNames(this.props.className, 'hero');
 
 		return (
 			<div className={componentClass}>

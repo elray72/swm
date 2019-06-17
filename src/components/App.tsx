@@ -11,29 +11,29 @@ import Home from './pages/Home/index';
 import Test from './pages/Test/index';
 
 const App: React.FC = () => {
-  return (
-    <React.Fragment>
-      <Helmet titleTemplate="SWM - %s" defaultTitle="SWM">
-        <meta name="description" content="" />
-      </Helmet>
-      <Header>
-        <Nav>
-          <Link to="/" className="nav__link" title="Home">
-            Home
-          </Link>
-          <Link to="/test" className="nav__link" title="About">
-            Test
-          </Link>
-        </Nav>
-      </Header>
-      <main className="main">
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/test" component={Test} />
-        </Switch>
-      </main>
-    </React.Fragment>
-  );
+	return (
+		<React.Fragment>
+			<Helmet titleTemplate="SWM - %s" defaultTitle="SWM">
+				<meta name="description" content="" />
+			</Helmet>
+			<Header>
+				<Nav>
+					<Link to="/" className="nav__link" title="Home">
+						Home
+					</Link>
+					<Link to="/test" className="nav__link" title="About">
+						Test
+					</Link>
+				</Nav>
+			</Header>
+			<main className="main">
+				<Switch>
+					<Route exact path="/" component={Home} />
+					<Route exact path="/test" component={Test} />
+				</Switch>
+			</main>
+		</React.Fragment>
+	);
 };
 
 export default App;
