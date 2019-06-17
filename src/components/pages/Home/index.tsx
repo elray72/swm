@@ -5,7 +5,7 @@ import './_home.scss';
 
 import Hero from '../../organisms/Hero'
 
-export class Home extends React.PureComponent {
+export default class Home extends React.PureComponent {
 
 	render() {
 		return (
@@ -20,4 +20,3 @@ export class Home extends React.PureComponent {
 	}
 }
 
-export default Home;

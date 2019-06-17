@@ -4,7 +4,7 @@ import './_test.scss';
 
 import Hero from '../../organisms/Hero'
 
-class Test extends React.PureComponent {
+export default class Test extends React.PureComponent {
 
 	render() {
 		return (
@@ -18,5 +18,3 @@ class Test extends React.PureComponent {
 		);
 	}
 }
-
-export default Test;
