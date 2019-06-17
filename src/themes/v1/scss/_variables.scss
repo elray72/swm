@@ -1,0 +1,68 @@
+/** ====================================================================================================================
+// Variables - Global
+// ================================================================================================================== */
+
+// Base
+// ---------------------------------------------------------------------------------------------------------------------
+$base-font-size:		16px;
+$page-max-width:		1200px;
+
+
+// Layout
+// ---------------------------------------------------------------------------------------------------------------------
+$header-height-m:		60px;
+$max-height-mobile:		823px; // max height for tallest known mainstream device, Pixel XL
+
+
+// Fonts
+// ---------------------------------------------------------------------------------------------------------------------
+$font-heading:			'Heebo', sans-serif;
+$font-text:				'Montserrat', sans-serif;
+
+
+// Colours
+// ---------------------------------------------------------------------------------------------------------------------
+
+$black:					#000;
+$off-black:				#222;
+$white:					#fff;
+$grey:					#535c68;
+$grey-pale:				#f0f0f0;
+$grey-light:			#91a5b6;
+$grey-dark:				#484e5a;
+
+$green:					#0fb9b1;
+$green-pale:			#b4e4de;
+$green-light:			#73b9af;
+$green-dark:			#0b7e77;
+$red:					#eb4d4b;
+$red-pale:				#ebc9c6;
+$red-light:				#eb8a88;
+$red-dark:				#7d2828;
+
+$primary:				#30336b;
+$primary-light:			#c4c4d3;
+$primary-dark:			#191a37;
+$secondary:				#ff7979;
+$secondary-light:		#ffcac5;
+$secondary-dark:		#ff3d3a;
+$tertiary:				#22a6b3;
+$tertiary-light:		#abd6d8;
+$tertiary-dark:			#096d75;
+
+// Breakpoints
+// ---------------------------------------------------------------------------------------------------------------------
+$grid-breakpoints: (
+	xs: 				0,			// iphone 6 onwards
+	sm: 				480px,		// bootstrap: 576px
+	md: 				768px,		// bootstrap: 768px
+	lg: 				992px,		// bootstrap: 992px
+	xl:					1440px		// bootstrap: 1200px
+) !default;
+
+$screen-xs:				map-get($grid-breakpoints, xs);
+$screen-sm:				map-get($grid-breakpoints, sm);
+$screen-md:				map-get($grid-breakpoints, md);
+$screen-lg:				map-get($grid-breakpoints, lg);
+$screen-xl:				map-get($grid-breakpoints, xl);
+
