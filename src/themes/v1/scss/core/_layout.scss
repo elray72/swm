@@ -12,9 +12,9 @@ body {
 	overflow-x: hidden;
 	margin: 0;
 	font-family: $font-text, sans-serif;
+	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	text-rendering: optimizeLegibility;
 }
 
 .page {
@@ -42,5 +42,5 @@ body {
 
 .section {
 	height: 100vh;
-	padding: 0 em(10);
+	padding: em(30) em(10);
 }

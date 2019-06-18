@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
+import * as tile from '../../../static/img/tile.jpg';
 
 import Tile from '../../molecules/Tile';
 
@@ -21,13 +22,13 @@ export default class Home extends React.PureComponent {
 					<meta name="description" content="Home" />
 				</Helmet>
 				<Tile element="div"
-							image="/static/img/tile.jpg"
+							image={tile}
 							title="Home and away" />
 				<Tile element="div"
-							image="/static/img/tile.jpg"
+							image={tile}
 							title="Home and away" />
 				<Tile element="div"
-							image="/static/img/tile.jpg"
+							image={tile}
 							title="Home and away" />
 			</Section>
 		);

@@ -1,6 +1,10 @@
 import * as React from 'react';
 import classNames from 'classnames';
+import * as defaultLogo from '../../../static/img/logo.png';
 import './_tile.scss';
+
+import Image from '../../atoms/Image';
+import Logo from '../../atoms/Logo';
 
 interface IProps {
 	className?: string,
@@ -18,11 +22,11 @@ export const Tile: React.FC<IProps> = (props) => {
 	return (
 		<div className={componentClass}>
 			<div className="tile__img-container">
-				<img className="tile__img" src="/static/img/tile.jpg" alt={props.title} />
+				<Image className="tile__img" src={props.image} alt={props.title} />
 			</div>
 			<div className="tile__title-container">
 				<div className="tile__logo--container">
-					<img className="tile__logo" src={props.logo} alt="7 logo" />
+					<Logo className="tile__logo" src={props.logo} alt="7 logo" />
 				</div>
 				<h2 className="tile__title">{props.title}</h2>
 			</div>
@@ -31,7 +35,7 @@ export const Tile: React.FC<IProps> = (props) => {
 };
 
 Tile.defaultProps = {
-	logo: '/static/img/logo.png'
+	logo: defaultLogo
 };
 
 export default Tile;
