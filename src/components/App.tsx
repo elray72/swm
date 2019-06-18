@@ -18,7 +18,7 @@ const App: React.FC = () => {
 			</Helmet>
 			<Header>
 				<Nav>
-					<Link to="/" className="nav__link" title="Home">
+					<Link to="/swm" className="nav__link" title="Home">
 						Home
 					</Link>
 					<Link to="/test" className="nav__link" title="About">
@@ -28,7 +28,6 @@ const App: React.FC = () => {
 			</Header>
 			<main className="main">
 				<Switch>
-					<Route exact path="/" component={Home} />
 					<Route exact path="/swm" component={Home} />
 					<Route exact path="/test" component={Test} />
 				</Switch>

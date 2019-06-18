@@ -5,10 +5,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "clean:build": "if exist docs rd build /s /q",
-    "clean:docs": "if exist docs rd docs /s /q",
-    "deploy:docs": "if exist build xcopy build docs /i /s",
-    "deploy": "npm run clean:docs && react-scripts build && npm run deploy:docs && npm run clean:build",
+    "deploy": "npm run build && gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -28,6 +25,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0",
     "prettier": "^1.18.2"
   },
