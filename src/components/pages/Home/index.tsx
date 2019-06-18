@@ -1,21 +1,35 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
-import './_home.scss';
+import styled from 'styled-components';
 
-import Hero from '../../organisms/Hero'
+import Tile from '../../molecules/Tile';
+
+const Section = styled.section`
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+`;
 
 export default class Home extends React.PureComponent {
-
 	render() {
 		return (
-			<div className="home">
+			<Section className="section">
 				<Helmet>
 					<title>Home</title>
 					<meta name="description" content="Home" />
 				</Helmet>
-				<Hero title="Hero" intro="It's where the heart is." />
-			</div>
+				<Tile element="div"
+							image="/static/img/tile.jpg"
+							title="Home and away" />
+				<Tile element="div"
+							image="/static/img/tile.jpg"
+							title="Home and away" />
+				<Tile element="div"
+							image="/static/img/tile.jpg"
+							title="Home and away" />
+			</Section>
 		);
 	}
 }
-

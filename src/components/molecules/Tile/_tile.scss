@@ -1,0 +1,61 @@
+@import "../../../themes/v1/scss/common";
+
+.home {
+	width: 100%;
+}
+
+.tile {
+	width: 100%;
+	max-width: em(315);
+	height: em(177);
+	background: black;
+	margin: 0 auto em(16);
+	display: flex;
+	position: relative;
+
+	&__img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+
+		&-container {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+		}
+	}
+
+	&__logo {
+		display: block;
+		width: 100%;
+		height: auto;
+
+		&--container {
+			height: em(40);
+			width: em(40);
+			margin-right: em(5);
+			flex-shrink: 0;
+		}
+	}
+
+	&__title {
+		font-size: em(20);
+		color: $white;
+		margin: 0;
+		flex-shrink: 1;
+
+		&-container {
+			position: relative;
+			z-index: 1;
+			width: 100%;
+			background: rgba($black, 0.5);
+			align-self: flex-end;
+			min-height: em(55);
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			padding: em(5) em(10);
+		}
+	}
+}

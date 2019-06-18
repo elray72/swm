@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import { Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import App from './components/App';
-import * as serviceWorker from './serviceWorker';
 
 const history = createBrowserHistory();
 
@@ -13,5 +12,3 @@ ReactDOM.render(
   </Router>,
   document.getElementById('root')
 );
-
-serviceWorker.unregister();
