@@ -29,7 +29,7 @@ const App: React.FC = () => {
 			<main className="main">
 				<Switch>
 					<Route exact path="/" component={Home} />
-					<Route exact path="/" component={Home} />
+					<Route exact path="/swm" component={Home} />
 					<Route exact path="/test" component={Test} />
 				</Switch>
 			</main>
