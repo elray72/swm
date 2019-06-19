@@ -32,13 +32,13 @@ export default class Home extends React.PureComponent {
 								target="_blank"
 								image={tileImage}
 								title="Link variation, no logo" />
-					<Tile type="responsive"
-								href="https://homeandaway.7plus.com.au/"
+					<Tile href="https://homeandaway.7plus.com.au/"
 								target="_blank"
 								image={tileImage}
 								logo={sevenLogo}
 								logoAlt="7 logo"
-								title="Responsive link" />
+								title="Responsive link"
+								theme="responsive" />
 				</TileList>
 			</Section>
 		);

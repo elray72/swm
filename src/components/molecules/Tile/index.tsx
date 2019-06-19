@@ -22,7 +22,7 @@ interface IProps {
 	logoAlt?: string,
 	target?: string,
 	title: string,
-	type?: TileType,
+	theme?: TileType,
 }
 
 const A = styled.a`
@@ -49,7 +49,7 @@ const TileDiv = styled(Div)`
 	position: relative;
 	transition: 0.25s ease-in-out;
 	${p => {
-		if (p.type === 'responsive') {
+		if (p.theme === 'responsive') {
 			return `
 				@media (max-width: 768px) {
 					height:  ${em(90)};
@@ -99,7 +99,7 @@ const TileTitleContainer = styled(Div)`
 
 const TileTitle = styled(Heading)`
 	font-size: ${em(20)};
-	margin: 0;
+	margin: 0 0 0 ${em(2.5)};
 	flex-shrink: 1;
 	color: ${p => p.colour};
 	transition: color 0.25s ease-in-out;
@@ -108,7 +108,7 @@ const TileTitle = styled(Heading)`
 const TileLogo = styled(Logo)`
 	height: ${em(40)};
 	width: ${em(40)};
-	margin-right: ${em(5)};
+	margin-right: ${em(2.5)};
 	flex-shrink: 0;
 `;
 
@@ -120,7 +120,7 @@ export const Tile = (props: IProps) => {
 		: null;
 
 	return (
-		<TileDiv className={componentClass} type={props.type}>
+		<TileDiv className={componentClass} theme={props.theme}>
 			<TileImage className="tile__bg" src={props.image} alt={props.title} />
 			<TileTitleContainer className="tile__title-container">
 				{tileLogo}

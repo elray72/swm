@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 interface IProps {
 	className?: string,
-	type?: string,
+	theme?: string,
 }
 
 const StyledDiv = styled.div``;
