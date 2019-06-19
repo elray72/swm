@@ -94,6 +94,7 @@ const TileTitleContainer = styled(Div)`
 	flex-direction: row;
 	align-items: center;
 	padding: ${em(5)} ${em(10)};
+	transition: 0.25s ease-in-out;
 `;
 
 const TileTitle = styled(Heading)`
@@ -101,6 +102,7 @@ const TileTitle = styled(Heading)`
 	margin: 0;
 	flex-shrink: 1;
 	color: ${p => p.colour};
+	transition: color 0.25s ease-in-out;
 `;
 
 const TileLogo = styled(Logo)`
