@@ -1,6 +1,6 @@
 import * as React from 'react';
 import classNames from 'classnames';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { em } from '../../../common/helpers';
 import * as defaultLogo from '../../../static/img/logo.png';
 import { ColourOption } from '../../../common/variables';
