@@ -1,6 +1,6 @@
 import { em } from '../helpers';
 
-describe('Tests for helpers', () => {
+describe('Common: Helpers', () => {
 
 	it('test em(16)', () => {
 		expect(em(16)).toBe('1em');
