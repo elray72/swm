@@ -23,7 +23,7 @@ describe('Pages: Home', () => {
 	const wrapper = shallow(<Tile {...props} />);
 
 	it('Renders', () => {
-		expect(wrapper.exists()).toBeTruthy();
+		expect(wrapper.exists()).toBe(true);
 	});
 
 });

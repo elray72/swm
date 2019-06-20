@@ -17,11 +17,11 @@ describe('Atoms: Heading', () => {
 		const wrapper = shallow(<Div {...props} />);
 
 		it('Renders', () => {
-			expect(wrapper.exists()).toBeTruthy();
+			expect(wrapper.exists()).toBe(true);
 		});
 
 		it('Should have class name', () => {
-			expect(wrapper.hasClass(props.className)).toBeTruthy();
+			expect(wrapper.hasClass(props.className)).toBe(true);
 			expect(wrapper.prop('className')).toBe(props.className);
 		});
 
@@ -36,7 +36,7 @@ describe('Atoms: Heading', () => {
 		const wrapper = shallow(<Div />);
 
 		it('Renders', () => {
-			expect(wrapper.exists()).toBeTruthy();
+			expect(wrapper.exists()).toBe(true);
 		});
 
 		it('Should have not have { className, theme} props', () => {

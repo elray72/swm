@@ -18,7 +18,7 @@ describe('Atoms: Heading', () => {
 
 		const h1 = shallow(<Heading type="h1">{props.children}</Heading>);
 		it('Renders', () => {
-			expect(h1.exists()).toBeTruthy();
+			expect(h1.exists()).toBe(true);
 			expect(h1.text()).toBe(props.children);
 		});
 

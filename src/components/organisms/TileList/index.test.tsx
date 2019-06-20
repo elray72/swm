@@ -10,7 +10,7 @@ describe('Organisms: TileList', () => {
 	const wrapper = shallow(<TileList />);
 
 	it('Renders', () => {
-		expect(wrapper.exists()).toBeTruthy();
+		expect(wrapper.exists()).toBe(true);
 	});
 
 });

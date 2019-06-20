@@ -18,15 +18,15 @@ describe('Atoms: BackgroundImage', () => {
 		const wrapper = shallow(<Logo {...props} />);
 
 		it('component renders', () => {
-			expect(wrapper.exists()).toBeTruthy();
+			expect(wrapper.exists()).toBe(true);
 		});
 
 		it('component should have class name', () => {
-			expect(wrapper.hasClass(props.className)).toBeTruthy();
+			expect(wrapper.hasClass(props.className)).toBe(true);
 		});
 
 		it('component should render image', () => {
-			expect(wrapper.find(LogoImage).exists()).toBeTruthy();
+			expect(wrapper.find(LogoImage).exists()).toBe(true);
 		});
 
 		it('image should have src and alt props', () => {
